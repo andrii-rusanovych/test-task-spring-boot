@@ -16,6 +16,7 @@
             <th>Comment ID</th>
             <th>Username</th>
             <th>Comment Body</th>
+            <th>Updated At</th>
         </tr>
         </thead>
         <tbody>
@@ -23,8 +24,9 @@
         <tr th:each="comment : ${comments}">
             <td th:text="${comment.postId}"></td>
             <td th:text="${comment.id}"></td>
-            <td th:text="${comment.user.username}"></td>
+            <td th:text="${comment.username}"></td>
             <td th:text="${comment.body}"></td>
+            <td th:text="${comment.updatedAt}"></td>
         </tr>
         </tbody>
     </table>

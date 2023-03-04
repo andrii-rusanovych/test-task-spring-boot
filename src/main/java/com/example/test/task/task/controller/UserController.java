@@ -1,5 +1,6 @@
 package com.example.test.task.task.controller;
 
+import com.example.test.task.task.dto.CommentWithUsernameAndUpdatedAtDTO;
 import com.example.test.task.task.entity.UserComment;
 import com.example.test.task.task.service.UserCommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,8 @@ public class UserController {
 
     @GetMapping("/users")
     public String getUsers(Model model) {
-        List<UserComment> userComments = userCommentService.getAllComments();
-        model.addAttribute("userComments", userComments);
-        return "users"; // name of the Thymeleaf template to render
+        List<CommentWithUsernameAndUpdatedAtDTO> comments = userCommentService.getAllComments();
+        model.addAttribute("comments", comments);
+        return "userComments"; // name of the Thymeleaf template to render
     }
 }
