@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Comments</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="container">
+    <h1>User Comments</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>Comment ID</th>
+            <th>Username</th>
+            <th>Comment Body</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Loop through user comments and display them in table rows -->
+        <tr th:each="comment : ${comments}">
+            <td th:text="${comment.postId}"></td>
+            <td th:text="${comment.id}"></td>
+            <td th:text="${comment.user.username}"></td>
+            <td th:text="${comment.body}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Bootstrap JS -->
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
