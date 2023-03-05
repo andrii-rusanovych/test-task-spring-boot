@@ -29,5 +29,5 @@ Note that the `$PORT` placeholder usually has a default value of `3306`.
 
 To run the application, use the following command:
 
-`./mvnw spring-boot:run`
+<pre>./mvnw spring-boot:run</pre>
 This will start the application on the default port 8080. Once the application is running, you can access it at http://localhost:8080/.
