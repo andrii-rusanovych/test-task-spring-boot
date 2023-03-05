@@ -30,8 +30,7 @@ Note that the `$PORT` placeholder usually has a default value of `3306`.
 You can use **Intellij Idea** to run this application using Spring Boot configuration 
 
 To run the application with **maven**, use the following command:
-
-<pre>./mvnw spring-boot:run</pre>
-or
+<pre>mvn clean install -DskipTests=true</pre>
+then
 <pre>mvn spring-boot:run</pre>
 This will start the application on the default port 8080. Once the application is running, you can access it at http://localhost:8080/.
