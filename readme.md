@@ -1,6 +1,6 @@
 # Spring Boot Application (v3.0.4)
 
-This is a Spring Boot application that requires a MySQL database. It uses the following dependencies:
+It uses the following dependencies:
 
 - Spring Web
 - Thymeleaf
@@ -11,7 +11,7 @@ This is a Spring Boot application that requires a MySQL database. It uses the fo
 
 - JAVA 17+
 - MAVEN 3.5+
-- MYSQL 5.x
+- MySQL 5.x
 
 ## Configuration
 
