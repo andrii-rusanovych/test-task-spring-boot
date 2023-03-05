@@ -9,9 +9,9 @@ This is a Spring Boot application that requires a MySQL database. It uses the fo
 
 ## Requirements
 
--JAVA 17+
--MAVEN 3.5+
--MYSQL 5.x
+- JAVA 17+
+- MAVEN 3.5+
+- MYSQL 5.x
 
 ## Configuration
 
