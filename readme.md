@@ -15,11 +15,11 @@ To configure the application, follow these steps:
 
 2. Set the values for the following properties in the `application.properties` file:
 
-`spring.datasource.url=jdbc:mysql://localhost:{**$PORT**}/{**$DATABASE_NAME_IN_LOWER_CASE**}?useSSL=false`
+`spring.datasource.url=jdbc:mysql://localhost:{__$PORT__}/{__$DATABASE_NAME_IN_LOWER_CASE__}?useSSL=false`
 
-`spring.datasource.username=**your_mysql_username**`
+`spring.datasource.username=__your_mysql_username__`
 
-`spring.datasource.password=**your_mysql_password**`
+`spring.datasource.password=__your_mysql_password__`
 
 Note that the `$PORT` placeholder usually has a default value of `3306`.
 
