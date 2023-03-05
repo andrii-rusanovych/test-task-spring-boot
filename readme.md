@@ -27,7 +27,9 @@ Note that the `$PORT` placeholder usually has a default value of `3306`.
 
 ## Running the Application
 
-To run the application, use the following command:
+You can use **Intellij Idea** to run this application using Spring Boot configuration 
+
+To run the application with **maven**, use the following command:
 
 <pre>./mvnw spring-boot:run</pre>
 or
