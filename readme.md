@@ -8,11 +8,11 @@ This is a Spring Boot application that requires a MySQL database. It uses the fo
 - Spring Data JPA
 
 ## Requirements
-java 17+
+JAVA 17+
 
-maven 3.5+
+MAVEN 3.5+
 
-Mysql 5
+MYSQL 5.x
 
 ## Configuration
 
