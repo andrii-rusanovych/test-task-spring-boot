@@ -24,8 +24,11 @@ To configure the application, follow these steps:
 Note that the `$PORT` placeholder usually has a default value of `3306`.
 
 3. Create and set the values of the 
+4. 
 **$TEST_TASK_APPLICATION_USER_NAME** 
-**TEST_TASK_APPLICATION_USER_PASSWORD** 
+
+**$TEST_TASK_APPLICATION_USER_PASSWORD** 
+
 system environment variables for the Spring Boot basic authentication default user.
 
 ## Running the Application
