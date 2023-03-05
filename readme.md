@@ -1,4 +1,4 @@
-# Spring Boot Application
+# Spring Boot Application (v3.0.4)
 
 This is a Spring Boot application that requires a MySQL database. It uses the following dependencies:
 
