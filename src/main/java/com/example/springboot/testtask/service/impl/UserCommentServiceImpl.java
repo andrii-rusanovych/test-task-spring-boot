@@ -1,11 +1,11 @@
-package com.example.test.task.task.service;
+package com.example.springboot.testtask.service.impl;
 
-import com.example.test.task.task.dto.CommentDTO;
-import com.example.test.task.task.dto.CommentResponseDTO;
-import com.example.test.task.task.dto.CommentWithUsernameAndUpdatedAtDTO;
-import com.example.test.task.task.dto.UserDTO;
-import com.example.test.task.task.entity.UserComment;
-import com.example.test.task.task.repository.UserCommentRepository;
+import com.example.springboot.testtask.dto.CommentDTO;
+import com.example.springboot.testtask.dto.CommentResponseDTO;
+import com.example.springboot.testtask.entity.UserComment;
+import com.example.springboot.testtask.repository.UserCommentRepository;
+import com.example.springboot.testtask.dto.CommentWithUsernameAndUpdatedAtDTO;
+import com.example.springboot.testtask.service.UserCommentService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
@@ -21,12 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class UserCommentService {
+public class UserCommentServiceImpl implements UserCommentService {
     @Autowired
     private UserCommentRepository userCommentRepository;
 
     @PostConstruct
-    public void fetchAndSaveUserComments() throws JsonProcessingException {
+    private void fetchAndSaveUserComments() throws JsonProcessingException {
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://dummyjson.com/comments";
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(url, String.class);

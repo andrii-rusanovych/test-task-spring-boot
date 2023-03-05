@@ -1,4 +1,4 @@
-package com.example.test.task.task.entity;
+package com.example.springboot.testtask.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

@@ -1,4 +1,4 @@
-package com.example.test.task.task.dto;
+package com.example.springboot.testtask.dto;
 
 import lombok.Getter;
 import lombok.Setter;

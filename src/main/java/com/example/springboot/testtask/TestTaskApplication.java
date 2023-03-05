@@ -1,14 +1,13 @@
-package com.example.test.task.task;
+package com.example.springboot.testtask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class TaskApplication {
+public class TestTaskApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TaskApplication.class, args);
+        SpringApplication.run(TestTaskApplication.class, args);
     }
 
 }
