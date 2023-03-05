@@ -23,4 +23,4 @@ To configure the application, follow these steps:
 
 Note that the `$PORT` placeholder usually has a default value of `3306`.
 
-3. Create and set the values of the `$USER_NAME` and `$USER_PASSWORD` environment variables for the Spring Boot basic authentication default user.
+3. Create and set the values of the <pre><b>$USER_NAME</b></pre> and `$USER_PASSWORD` environment variables for the Spring Boot basic authentication default user.
