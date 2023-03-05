@@ -13,10 +13,10 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class BasicAuthWebSecurityConfiguration {
-    @Value("${USER_NAME}")
+    @Value("${TEST_TASK_APPLICATION_USER_NAME}")
     private String userName;
 
-    @Value("${USER_PASSWORD}")
+    @Value("${TEST_TASK_APPLICATION_USER_PASSWORD}")
     private String userPassword;
 
     @Bean
